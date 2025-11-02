@@ -1,0 +1,24 @@
+:root {
+  --primary-color: white;
+  --secondary-color: #978000;
+  --background-color: #eeeeee;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../font/Rubik-Regular.ttf");
+}
+
+body {
+  font-family: Rubik;
+}
+
+.form-control:focus {
+  border-color: #ffeb90;
+  box-shadow: 0 0 0 0.2rem #ffd700;
+  background-color: white;
+}
+
+.form-group a {
+  text-decoration: none;
+}
