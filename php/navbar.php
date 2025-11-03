@@ -119,9 +119,15 @@
     <!-- Navbar, Search, Keranjang, User -->
     <nav class="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand font-weight-bold" href="#">
+            <?php if ($user_level == 'penjual'): ?>
+            <a class="navbar-brand font-weight-bold" href="index_p.php">
                 Alzi Petshop
             </a>
+            <?php elseif ($user_level == 'pembeli'): ?>
+            <a class="navbar-brand font-weight-bold" href="index.php">
+                Alzi Petshop
+            </a>
+            <?php endif; ?>
             <div class="search-box">
                 <div class="search-input-wrapper">
                     <input type="text" id="searchInput" placeholder="Cari produk..." autocomplete="off">
@@ -129,9 +135,9 @@
                 </div>
             </div>
             <?php if ($user_level == 'penjual'): ?>
-                <div class="d-flex">
-                    <a href="tambah.php" class="btn btn-warning ms-4 me-1" id="tambah">Tambah</a>
-                </div>
+            <div class="d-flex">
+                <a href="tambah.php" class="btn btn-warning ms-4 me-1" id="tambah">Tambah</a>
+            </div>
             <?php endif; ?>
         </div>
     </nav>
@@ -160,8 +166,12 @@
                     if (product.stock == 0) {
                         item.classList.add('out-of-stock');
                     }
-                    
-                    let priceFormatted = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(product.price);
+
+                    let priceFormatted = new Intl.NumberFormat('id-ID', {
+                        style: 'currency',
+                        currency: 'IDR',
+                        minimumFractionDigits: 0
+                    }).format(product.price);
 
                     // Logika untuk path gambar WebP dan fallback
                     const imagePath = product.image;

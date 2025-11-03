@@ -10,6 +10,7 @@
     }
     
     $allowed_levels = ['penjual'];
+    $user_level = $_SESSION['level'];
     
     if (!in_array($_SESSION['level'], $allowed_levels)) {
         session_unset();
@@ -53,36 +54,36 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <style>
+    .navbar-brand {
+        display: inline;
+    }
+
+    .container {
+        padding-top: 5rem;
+    }
+
+    .stock-control {
+        display: flex;
+        align-items: center;
+    }
+
+    .stock-control button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .stock-control input {
+        text-align: center;
+        width: 60px;
+        margin: 0 5px;
+    }
+
+    @media (max-width: 321px) {
         .navbar-brand {
-            display: inline;
+            font-size: 17px;
         }
-
-        .container {
-            padding-top: 5rem;
-        }
-
-        .stock-control {
-            display: flex;
-            align-items: center;
-        }
-
-        .stock-control button {
-            width: 40px;
-            height: 40px;
-            font-size: 1.2rem;
-        }
-
-        .stock-control input {
-            text-align: center;
-            width: 60px;
-            margin: 0 5px;
-        }
-
-        @media (max-width: 321px) {
-            .navbar-brand {
-                font-size: 17px;
-            }
-        }
+    }
     </style>
 </head>
 
@@ -90,9 +91,15 @@
     <script src="script/script.js"></script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand ms-2 font-weight-bold" href="#">
+            <?php if ($user_level == 'penjual'): ?>
+            <a class="navbar-brand font-weight-bold" href="index_p.php">
                 Alzi Petshop
             </a>
+            <?php elseif ($user_level == 'pembeli'): ?>
+            <a class="navbar-brand font-weight-bold" href="index.php">
+                Alzi Petshop
+            </a>
+            <?php endif; ?>
         </div>
     </nav>
 
@@ -145,16 +152,16 @@
     </div>
 
     <script>
-        function changeStock(amount) {
-            const stockInput = document.getElementById('stock');
-            let currentValue = parseInt(stockInput.value);
-            if (isNaN(currentValue)) {
-                currentValue = 0;
-            }
-            if (currentValue + amount >= 0) {
-                stockInput.value = currentValue + amount;
-            }
+    function changeStock(amount) {
+        const stockInput = document.getElementById('stock');
+        let currentValue = parseInt(stockInput.value);
+        if (isNaN(currentValue)) {
+            currentValue = 0;
         }
+        if (currentValue + amount >= 0) {
+            stockInput.value = currentValue + amount;
+        }
+    }
     </script>
 </body>
 

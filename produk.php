@@ -1,5 +1,8 @@
 <?php
     session_start();
+
+    if (isset($_SESSION['level'])) {
+    }
     include('php/php.php');
     
     $query = "SELECT id, name, price, image, stock FROM products";
@@ -38,89 +41,89 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .deskripsi-terbatas {
-            cursor: pointer;
-            position: relative;
-            padding-bottom: 1rem;
+    .deskripsi-terbatas {
+        cursor: pointer;
+        position: relative;
+        padding-bottom: 1rem;
+    }
+
+    .deskripsi-terbatas span {
+        display: block;
+    }
+
+    .deskripsi-terbatas button {
+        color: #007bff;
+        text-decoration: underline;
+        border: none;
+        background: transparent;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        border: none;
+        box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .message-image {
+        width: auto;
+        height: 40px;
+        display: block;
+        border: 1.5px rgb(255, 180, 0) solid;
+        border-radius: 6px;
+    }
+
+    @media (max-width: 436px) {
+        #container-p {
+            padding-bottom: 4rem;
         }
 
-        .deskripsi-terbatas span {
-            display: block;
+        .item-konten-p {
+            padding: 1rem 1.5rem 0rem 1.5rem;
         }
 
-        .deskripsi-terbatas button {
-            color: #007bff;
-            text-decoration: underline;
-            border: none;
-            background: transparent;
-        }
-
-        .dropdown-menu {
+        .item-button-mobile {
+            display: flex;
+            position: fixed;
             width: 100%;
-            border: none;
-            box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.05);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0.4rem 0.8rem;
+            background-color: white;
+            justify-content: center;
+            z-index: 1000;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
         }
 
-        .message-image {
-            width: auto;
-            height: 40px;
+        .item-button-tabdesk {
+            display: none;
+        }
+
+        .btn-keranjang,
+        .btn-beli {
+            flex: 1;
+        }
+    }
+
+    @media (min-width: 436px) {
+        .item-button-tabdesk {
             display: block;
-            border: 1.5px rgb(255, 180, 0) solid;
-            border-radius: 6px;
         }
 
-        @media (max-width: 436px) {
-            #container-p {
-                padding-bottom: 4rem;
-            }
-
-            .item-konten-p {
-                padding: 1rem 1.5rem 0rem 1.5rem;
-            }
-
-            .item-button-mobile {
-                display: flex;
-                position: fixed;
-                width: 100%;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                padding: 0.4rem 0.8rem;
-                background-color: white;
-                justify-content: center;
-                z-index: 1000;
-                box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-            }
-
-            .item-button-tabdesk {
-                display: none;
-            }
-
-            .btn-keranjang,
-            .btn-beli {
-                flex: 1;
-            }
+        .item-button-mobile {
+            display: none;
         }
+    }
 
-        @media (min-width: 436px) {
-            .item-button-tabdesk {
-                display: block;
-            }
+    .section {
+        padding: 20px;
+        background: #ffffff;
+        text-align: center;
+    }
 
-            .item-button-mobile {
-                display: none;
-            }
-        }
-
-        .section {
-            padding: 20px;
-            background: #ffffff;
-            text-align: center;
-        }
-
-        .section:nth-child(even) {
-            background: #ffffff;
-        }
+    .section:nth-child(even) {
+        background: #ffffff;
+    }
     </style>
     <title>Alzi Petshop</title>
 </head>
@@ -141,7 +144,8 @@
                 <picture>
                     <source srcset="<?php echo $webp_path; ?>" type="image/webp">
                     <source srcset="<?php echo $original_path; ?>" type="image/jpeg">
-                    <img src="<?php echo $original_path; ?>" alt="<?php echo htmlspecialchars($productd['name']); ?>" class="product-image">
+                    <img src="<?php echo $original_path; ?>" alt="<?php echo htmlspecialchars($productd['name']); ?>"
+                        class="product-image">
                 </picture>
             </div>
             <!-- Detail Produk -->
@@ -173,7 +177,8 @@
                             $text = "Halo saya ingin bertanya tentang produk " . $productd['name'];
                             $encoded_text = urlencode($text);
                         ?>
-                        <a href="https://api.whatsapp.com/send?phone=6283192655757&text=<?php echo $encoded_text ?>" class="btn-keranjang" style="text-decoration: none;">Hubungi</a>
+                        <a href="https://api.whatsapp.com/send?phone=6283192655757&text=<?php echo $encoded_text ?>"
+                            class="btn-keranjang" style="text-decoration: none;">Hubungi</a>
                     </div>
                 </form>
             </div>
@@ -197,21 +202,21 @@
 
     <!-- Js -->
     <script>
-        function toggleDescription() {
-            const shortDesc = document.getElementById('short-desc');
-            const fullDesc = document.getElementById('full-desc');
-            const button = document.getElementById('toggle-desc');
+    function toggleDescription() {
+        const shortDesc = document.getElementById('short-desc');
+        const fullDesc = document.getElementById('full-desc');
+        const button = document.getElementById('toggle-desc');
 
-            if (fullDesc.style.display === 'none' || fullDesc.style.display === '') {
-                fullDesc.style.display = 'inline';
-                shortDesc.style.display = 'none';
-                button.textContent = 'Sembunyikan';
-            } else {
-                fullDesc.style.display = 'none';
-                shortDesc.style.display = 'inline';
-                button.textContent = 'Lihat Selengkapnya';
-            }
+        if (fullDesc.style.display === 'none' || fullDesc.style.display === '') {
+            fullDesc.style.display = 'inline';
+            shortDesc.style.display = 'none';
+            button.textContent = 'Sembunyikan';
+        } else {
+            fullDesc.style.display = 'none';
+            shortDesc.style.display = 'inline';
+            button.textContent = 'Lihat Selengkapnya';
         }
+    }
     </script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
