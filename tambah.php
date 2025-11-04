@@ -49,7 +49,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Metadata -->
     <?php include('metadata.php'); ?>
-    <title>Tambah Data</title>
+    <title>Add Product</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -104,23 +104,23 @@
     </nav>
 
     <div class="container px-3" style="color: black;">
-        <h3 style="font-weight: bold;">Tambah Produk</h3>
+        <h3 style="font-weight: bold;">Add Product</h3>
         <form action="php/proses_tambah.php" method="post" enctype="multipart/form-data">
             <div class="mb-3">
-                <label for="name" class="form-label">Nama</label>
+                <label for="name" class="form-label">Name</label>
                 <input type="text" name="name" id="name" class="form-control" required autocomplete="off">
             </div>
             <div class="mb-3">
-                <label for="description" class="form-label">Deskripsi</label>
+                <label for="description" class="form-label">Description</label>
                 <textarea name="description" id="description" class="form-control" rows="4" required
                     autocomplete="off"></textarea>
             </div>
             <div class="mb-3">
-                <label for="price" class="form-label">Harga</label>
+                <label for="price" class="form-label">Price</label>
                 <input type="text" name="price" id="price" class="form-control" requiredautocomplete="off">
             </div>
             <div class="mb-3">
-                <label for="category" class="form-label">Kategori</label>
+                <label for="category" class="form-label">Category</label>
                 <select name="category" id="category" class="form-control" required autocomplete="off">
                     <?php
                     foreach ($enum_values_category as $value) {
@@ -130,11 +130,11 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label for="satuan" class="form-label">Satuan</label>
+                <label for="satuan" class="form-label">Unit</label>
                 <input type="text" name="satuan" id="satuan" class="form-control" required autocomplete="off">
             </div>
             <div class="mb-3">
-                <label for="stock" class="form-label">Stok</label>
+                <label for="stock" class="form-label">Stock</label>
                 <div class="stock-control">
                     <button type="button" class="btn btn-secondary" onclick="changeStock(-1)">-</button>
                     <input type="number" name="stock" id="stock" value="0" class="form-control" required>
@@ -142,14 +142,18 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="image" class="form-label">Foto</label>
+                <label for="image" class="form-label">Product Picture</label>
                 <input type="file" name="image" id="image" class="form-control" accept="image/*" required
                     autocomplete="off">
             </div>
-            <button type="submit" class="btn btn-success">Tambah Data</button>
+            <button type="submit" class="btn btn-success">Add Product</button>
         </form>
-        <a href="index_p.php" class="btn btn-warning my-3">Kembali</a>
+        <a href="index_p.php" class="btn btn-warning my-3">Back</a>
     </div>
+    
+    <footer class="text-center">
+        <p>Created by Alzi Petshop | &copy 2025</p>
+    </footer>
 
     <script>
     function changeStock(amount) {

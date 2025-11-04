@@ -41,6 +41,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Metadata -->
     <?php include('metadata.php'); ?>
+    <title>Alzi Petshop</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -60,7 +61,7 @@
         }
 
         .product.out-of-stock .ppp::after {
-            content: 'Stok Habis';
+            content: 'Out of Stock';
             position: absolute;
             top: 50%;
             left: 50%;
@@ -109,7 +110,7 @@
                 ?>
                 <div class="carousel-caption-custom">
                     <h1>Alzi Petshop</h1>
-                    <p>Belanja Kebutuhan Kucingmu Disini!</p>
+                    <p>Shop for Your Cat's Needs Here!</p>
                 </div>
             </div>
         </div>
@@ -117,22 +118,22 @@
     <!-- End Slider Otomatis Carousel Bootstrap v5.3 -->
     <!-- Tombol Kategori -->
     <div class="categories">
-        <h2>Kategori Produk</h2>
+        <h2>Product Category</h2>
         <div class="category-list">
             <div class="category" style="background-color: #ff6c59" data-category="Makanan">
-                Makanan
+                Food
             </div>
             <div class="category" style="background-color: #ffada2" data-category="Peralatan">
-                Peralatan
+                Equipment
             </div>
             <div class="category" style="background-color: #ffd3a2" data-category="Aksesoris">
-                Aksesoris
+                Accessories
             </div>
             <div class="category" style="background-color: #f2d7b7" data-category="Kesehatan">
-                Kesehatan
+                Health
             </div>
             <div class="category" style="background-color: #b4b7f0" data-category="Kebersihan">
-                Kebersihan
+                Cleanliness
             </div>
         </div>
     </div>
@@ -177,7 +178,7 @@
     <div class="container mt-5 vh-100">
         <section id="alamat" class="section">
             <div class="mt-5">
-                <h3 class="text-center mb-4">Lokasi Toko</h3>
+                <h3 class="text-center mb-4">Store Location</h3>
                 <div class="mt-3" style="margin: 0 auto;">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.1145044769314!2d104.68707947487862!3d-3.01138543994488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b9ff0b7a07357%3A0x85592345b2155066!2sAlzi%20Petshop!5e1!3m2!1sid!2sid!4v1737042965586!5m2!1sid!2sid"

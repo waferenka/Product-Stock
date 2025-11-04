@@ -97,7 +97,7 @@
     }
 
     .search-dropdown .item.out-of-stock .item-image-wrapper::after {
-        content: 'Stok Habis';
+        content: 'Out of Stock';
         position: absolute;
         top: 0;
         left: 0;
@@ -130,13 +130,13 @@
             <?php endif; ?>
             <div class="search-box">
                 <div class="search-input-wrapper">
-                    <input type="text" id="searchInput" placeholder="Cari produk..." autocomplete="off">
+                    <input type="text" id="searchInput" placeholder="Find a Product..." autocomplete="off">
                     <div class="search-dropdown" id="searchResults"></div>
                 </div>
             </div>
             <?php if ($user_level == 'penjual'): ?>
             <div class="d-flex">
-                <a href="tambah.php" class="btn btn-warning ms-4 me-1" id="tambah">Tambah</a>
+                <a href="tambah.php" class="btn btn-warning ms-4 me-1" id="tambah">Add Product</a>
             </div>
             <?php endif; ?>
         </div>

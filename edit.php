@@ -57,7 +57,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Metadata -->
     <?php include('metadata.php'); ?>
-    <title>Tambah Data</title>
+    <title>Edit Product</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -106,27 +106,27 @@
     <!-- End Navbar, Search, Keranjang, User -->
 
     <div class="container px-3" style="color: black;">
-        <h3 style="font-weight: bold;">Edit Produk</h3>
+        <h3 style="font-weight: bold;">Edit Product</h3>
         <form action="php/proses_edit.php" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?= $product_id ?>"> <!-- Menambahkan ID Produk -->
 
             <div class="mb-3">
-                <label for="name" class="form-label">Nama Produk</label>
+                <label for="name" class="form-label">Product Name</label>
                 <input type="text" name="name" id="name" value="<?= $nama_p ?>" class="form-control" required
                     autocomplete="off">
             </div>
             <div class="mb-3">
-                <label for="description" class="form-label">Deskripsi</label>
+                <label for="description" class="form-label">Descirption</label>
                 <textarea name="description" id="description" class="form-control" rows="4" required
                     autocomplete="off"><?= htmlspecialchars($deskripsi_p) ?></textarea>
             </div>
             <div class="mb-3">
-                <label for="price" class="form-label">Harga</label>
+                <label for="price" class="form-label">Price</label>
                 <input type="text" name="price" id="price" value="<?= $harga_p ?>" class="form-control" required
                     autocomplete="off">
             </div>
             <div class="mb-3">
-                <label for="category" class="form-label">Kategori</label>
+                <label for="category" class="form-label">Category</label>
                 <select name="category" id="category" class="form-control" required autocomplete="off">
                     <?php
                         // Menampilkan kategori dengan menandai kategori yang sudah dipilih
@@ -138,12 +138,12 @@
                 </select>
             </div>
             <div class="mb-3">
-                <label for="satuan" class="form-label">Satuan</label>
+                <label for="satuan" class="form-label">Unit</label>
                 <input type="text" name="satuan" id="satuan" value="<?= $satuan_p ?>" class="form-control" required
                     autocomplete="off">
             </div>
             <div class="mb-3">
-                <label for="stock" class="form-label">Stok</label>
+                <label for="stock" class="form-label">Stock</label>
                 <div class="stock-control">
                     <button type="button" class="btn btn-secondary" onclick="changeStock(-1)">-</button>
                     <input type="number" name="stock" id="stock" value="<?= $stock_p ?>" class="form-control" required>
@@ -151,7 +151,7 @@
                 </div>
             </div>
             <div class="mb-3">
-                <label for="image" class="form-label">Foto Produk</label>
+                <label for="image" class="form-label">Product Picture</label>
                 <input type="file" name="image" id="image" class="form-control" accept="image/*"
                     autocomplete="off">
                 <!-- Menampilkan gambar lama jika ada -->
@@ -167,14 +167,14 @@
                 </picture>
                 <?php endif; ?>
             </div>
-            <button type="submit" class="btn btn-success">Simpan Perubahan</button>
+            <button type="submit" class="btn btn-success">Save Changes</button>
         </form>
-        <a href="index_p.php" class="btn btn-warning my-2 me-1">Kembali</a>
-        <a href="php/hapus.php?product_id=<?= $product_id ?>" class="btn btn-danger my-2">Hapus</a>
+        <a href="index_p.php" class="btn btn-warning my-2 me-1">Back</a>
+        <a href="php/hapus.php?product_id=<?= $product_id ?>" class="btn btn-danger my-2">Delete</a>
     </div>
     <!-- Footer start -->
     <footer class="text-center">
-        <p>Create by Alzi Petshop | &copy 2024</p>
+        <p>Created by Alzi Petshop | &copy 2025</p>
     </footer>
     <!-- Footer End -->
 

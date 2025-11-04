@@ -166,19 +166,18 @@
                         ?>
                         <?php if ($isTruncated): ?>
                         <button id="toggle-desc" type="button" class="btn btn-link p-0"
-                            style="pointer-events: none; text-decoration: none; color: rgb(255, 180, 0); font-weight: bold;">Lihat
-                            Selengkapnya</button>
+                            style="pointer-events: none; text-decoration: none; color: rgb(255, 180, 0); font-weight: bold;">See More</button>
                         <?php endif; ?>
                     </div>
                     <!-- Menampilkan stok produk -->
-                    <p class="mt-3"><b>Stok:</b> <?php echo htmlspecialchars($productd['stock']); ?></p>
+                    <p class="mt-3"><b>Stock:</b> <?php echo htmlspecialchars($productd['stock']); ?></p>
                     <div class="d-flex align-items-center justify-content-start gap-2 action-row">
                         <?php  
                             $text = "Halo saya ingin bertanya tentang produk " . $productd['name'];
                             $encoded_text = urlencode($text);
                         ?>
                         <a href="https://api.whatsapp.com/send?phone=6283192655757&text=<?php echo $encoded_text ?>"
-                            class="btn-keranjang" style="text-decoration: none;">Hubungi</a>
+                            class="btn-keranjang" style="text-decoration: none;">Contact</a>
                     </div>
                 </form>
             </div>
@@ -189,7 +188,7 @@
 
         <section id="alamat" class="section">
             <div class="mt-5">
-                <h3 class="text-center mb-4">Lokasi Toko</h3>
+                <h3 class="text-center mb-4">Store Location</h3>
                 <div class="mt-3" style="margin: 0 auto;">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.1145044769314!2d104.68707947487862!3d-3.01138543994488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b9ff0b7a07357%3A0x85592345b2155066!2sAlzi%20Petshop!5e1!3m2!1sid!2sid!4v1737042965586!5m2!1sid!2sid"

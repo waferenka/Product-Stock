@@ -254,16 +254,16 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Tentang</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#product">Produk</a>
+                        <a class="nav-link" href="#product">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#alamat">Alamat</a>
+                        <a class="nav-link" href="#alamat">Address</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Kontak</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -273,41 +273,26 @@
     <section id="home">
         <header class="header">
             <div class="header-content">
-                <h1>Selamat Datang di Alzi Petshop</h1>
-                <p>Menyediakan kebutuhan terbaik untuk hewan peliharaan Anda.</p>
-                <a href="#about" class="btn">Lebih Lanjut</a>
-                <a href="atur_sesi_pembeli.php" class="btn">Cek Produk</a>
-                <a href="login/login_form.php" class="btn">Penjual</a>
+                <h1>Welcome to The Alzi Petshop</h1>
+                <p>Providing the best needs for your pets.</p>
+                <a href="#about" class="btn">More</a>
+                <a href="atur_sesi_pembeli.php" class="btn">See Products</a>
+                <a href="login/login_form.php" class="btn">Seller</a>
             </div>
         </header>
     </section>
 
     <section id="about" class="section">
         <div class="about reveal">
-            <h2>Tentang Kami</h2>
-            <p>Alzi Petshop adalah toko yang telah beroperasi dengan penuh dedikasi selama lebih dari 4 tahun, berfokus
-                untuk menyediakan segala kebutuhan bagi hewan peliharaan, khususnya kucing. Sejak pertama kali dibuka,
-                kami berkomitmen untuk memberikan produk-produk berkualitas tinggi yang tidak hanya memenuhi standar
-                kesehatan dan kenyamanan hewan peliharaan, tetapi juga mendukung gaya hidup mereka. Kami menawarkan
-                berbagai macam produk, mulai dari makanan bergizi yang diformulasikan khusus untuk berbagai jenis
-                kucing, aksesoris lucu dan fungsional, peralatan yang diperlukan untuk merawat kucing kesayangan, hingga
-                perlengkapan kebersihan yang praktis dan efektif. Tidak hanya itu, kami juga menyediakan obat-obatan
-                yang dapat membantu menjaga kesehatan kucing, termasuk vitamin, obat cacing, dan produk-produk perawatan
-                lainnya.</p>
-            <p>Alzi Petshop selalu berusaha untuk menghadirkan berbagai inovasi dan produk terbaru guna memenuhi
-                kebutuhan pemilik kucing yang beragam. Kami bekerja sama dengan berbagai pemasok terpercaya untuk
-                memastikan setiap produk yang kami jual memiliki kualitas terbaik dan aman untuk kucing Anda. Dengan
-                pengalaman yang kami miliki selama 4 tahun, kami selalu mendengarkan feedback dari pelanggan dan
-                berusaha untuk memberikan pelayanan yang terbaik, mulai dari konsultasi tentang perawatan kucing hingga
-                rekomendasi produk yang sesuai dengan kebutuhan spesifik hewan peliharaan Anda. Kami berkomitmen untuk
-                menjadi tempat yang dapat diandalkan oleh para pemilik kucing, karena kami percaya bahwa kucing adalah
-                bagian dari keluarga yang patut mendapatkan perhatian dan perawatan terbaik.</p>
+            <h2>About</h2>
+            <p>Alzi Petshop is a store that has been operating with dedication for over 4 years, focusing on providing everything pets need, especially cats. Since opening, we have been committed to offering high-quality products that not only meet pets' health and comfort standards but also support their lifestyles. We offer a wide range of products, including nutritious food specially formulated for different types of cats, cute and functional accessories, essential tools for caring for beloved cats, and practical, effective cleaning supplies. Additionally, we provide medications to help maintain cats' health, including vitamins, deworming treatments, and other care products.</p>
+            <p>Alzi Petshop always strives to present various innovations and the latest products to meet the diverse needs of cat owners. We collaborate with various trusted suppliers to ensure that every product we sell is of the highest quality and safe for your cat. With the experience we have gained over 4 years, we always listen to feedback from our customers and strive to provide the best service, from consultations on cat care to recommendations for products that suit the specific needs of your pets. We are committed to being a reliable place for cat owners, because we believe that cats are part of the family and deserve the best attention and care.</p>
         </div>
     </section>
 
     <section id="product" class="section">
         <div class="container reveal">
-            <h2 class="mb-4">Produk Kami</h2>
+            <h2 class="mb-4">Our Products</h2>
             <a href="login/login_form.php">
                 <div class="produk">
                     <?php
@@ -335,7 +320,7 @@
 
     <section id="alamat" class="section">
         <div class="mt-5">
-            <h3 class="text-center mb-4">Lokasi Toko</h3>
+            <h3 class="text-center mb-4">Store Location</h3>
             <div class="mt-3" style="margin: 0 auto;">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.1145044769314!2d104.68707947487862!3d-3.01138543994488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b9ff0b7a07357%3A0x85592345b2155066!2sAlzi%20Petshop!5e1!3m2!1sid!2sid!4v1737042965586!5m2!1sid!2sid"
@@ -346,13 +331,13 @@
     </section>
     <section id="contact" class="section">
         <div class="container reveal mt-5">
-            <h2 class="mb-4">Hubungi Kami</h2>
+            <h2 class="mb-4">Our Contact</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm border-light">
                         <div class="card-body text-center m-3">
                             <i class="bi bi-geo-alt-fill fs-2 text-primary"></i>
-                            <h5 class="card-title">Alamat</h5>
+                            <h5 class="card-title">Address</h5>
                             <p class="card-text">Perum. Patra Sriwijaya FD No.11, Kota Palembang</p>
                         </div>
                     </div>
@@ -372,7 +357,7 @@
                     <div class="card shadow-sm border-light">
                         <div class="card-body text-center m-3">
                             <i class="bi bi-telephone-fill fs-2 text-primary"></i>
-                            <h5 class="card-title">Telepon</h5>
+                            <h5 class="card-title">Phone</h5>
                             <p class="card-text">0831 6107 6087</p>
                         </div>
                     </div>
@@ -380,7 +365,7 @@
             </div>
 
             <div class="contact-form mt-5">
-                <h3 class="text-center mb-4">Kirim Pesan</h3>
+                <h3 class="text-center mb-4">Send Messages</h3>
                 <form action="landing_page.php" method="POST">
                     <div class="row" style="margin: 0 auto;">
                         <div class="col-12 mb-3" style="margin: 0 auto;">
@@ -392,7 +377,7 @@
                                 required></textarea>
                         </div>
                         <div class="col-12" style="margin: 0 auto;">
-                            <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+                            <button type="submit" class="btn btn-primary w-100">Send It</button>
                         </div>
                     </div>
                 </form>
@@ -401,7 +386,7 @@
     </section>
 
     <footer class="footer pt-4">
-        <p>Create by Alzi Petshop | &copy 2024</p>
+        <p>Created by Alzi Petshop | &copy 2025</p>
     </footer>
 
     <script>
