@@ -173,7 +173,7 @@
                     <p class="mt-3"><b>Stock:</b> <?php echo htmlspecialchars($productd['stock']); ?></p>
                     <div class="d-flex align-items-center justify-content-start gap-2 action-row">
                         <?php  
-                            $text = "Halo saya ingin bertanya tentang produk " . $productd['name'];
+                            $text = "Hello, I would like to ask about the product " . $productd['name'];
                             $encoded_text = urlencode($text);
                         ?>
                         <a href="https://api.whatsapp.com/send?phone=6283192655757&text=<?php echo $encoded_text ?>"
@@ -209,11 +209,11 @@
         if (fullDesc.style.display === 'none' || fullDesc.style.display === '') {
             fullDesc.style.display = 'inline';
             shortDesc.style.display = 'none';
-            button.textContent = 'Sembunyikan';
+            button.textContent = 'See Less';
         } else {
             fullDesc.style.display = 'none';
             shortDesc.style.display = 'inline';
-            button.textContent = 'Lihat Selengkapnya';
+            button.textContent = 'See More';
         }
     }
     </script>
