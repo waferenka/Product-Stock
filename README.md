@@ -99,19 +99,13 @@ Make sure you have the following software installed:
     <td><center>Home Page (Product Catalog)</center></td>
   </tr>
   <tr>
-    <td><center><img src="imgs/landing.jpg" width="80%" alt="Home Page"></center></td>
+    <td><center><img src="preview/home.png" width="80%" alt="Home Page"></center></td>
   </tr>
   <tr>
     <td><center>Product Detail Page</center></td>
   </tr>
   <tr>
-    <td><center><img src="imgs/slide1.jpg" width="80%" alt="Product Detail"></center></td>
-  </tr>
-    <tr>
-    <td><center>Seller Dashboard (Product Management)</center></td>
-  </tr>
-  <tr>
-    <td><center><img src="imgs/slide2.jpg" width="80%" alt="Seller Dashboard"></center></td>
+    <td><center><img src="preview/dProduct.png" width="80%" alt="Product Detail"></center></td>
   </tr>
 </table>
 </details>
