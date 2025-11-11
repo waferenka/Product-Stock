@@ -120,24 +120,24 @@ The folder structure is designed to separate assets, backend logic, and interfac
 
 ```
 .
-├── css/                # File styling CSS kustom & Bootstrap
-├── font/               # Font yang digunakan dalam proyek
-├── imgs/               # Aset gambar (produk, slide, ikon)
-├── js/                 # Skrip JavaScript
-├── login/              # Halaman & logika untuk login, register, logout
-├── php/                # Skrip backend PHP (koneksi DB, proses form)
-├── script/             # Skrip JavaScript tambahan
-├── alzipetshop.sql     # File dump database MySQL
-├── index.php           # Halaman utama untuk pembeli (katalog)
-├── index_p.php         # Halaman utama untuk penjual (dasbor)
-├── produk.php          # Halaman untuk menampilkan detail produk
-├── tambah.php          # Form untuk menambah produk baru
-├── edit.php            # Form untuk mengedit produk
-└── README.md           # File yang sedang Anda baca
+├── css/ # Custom CSS and Bootstrap styling files
+├── font/ # Fonts used in the project
+├── imgs/ # Image assets (products, slides, icons)
+├── js/ # JavaScript scripts
+├── login/ # Login, register, and logout pages & logic
+├── php/ # Backend PHP scripts (DB connection, form processing)
+├── script/ # Additional JavaScript scripts
+├── alzipetshop.sql # MySQL database dump file
+├── index.php # Main page for buyers (catalog)
+├── index_p.php # Main page for sellers (dashboard)
+├── produk.php # Product detail page
+├── tambah.php # Form for adding new products
+├── edit.php # Form for editing existing products
+└── README.md # The file you are reading
 ```
 
 ---
 
-## ⚖️ Lisensi
+## ⚖️ License
 
-Didistribusikan di bawah Lisensi MIT. Lihat `LICENSE` untuk informasi lebih lanjut.
+Distributed under the MIT License.  See `LICENSE` for more details.
