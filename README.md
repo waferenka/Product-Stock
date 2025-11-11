@@ -99,13 +99,13 @@ Make sure you have the following software installed:
     <td><center>Home Page (Product Catalog)</center></td>
   </tr>
   <tr>
-    <td><center><img src="preview/home.png" width="80%" alt="Home Page"></center></td>
+    <td><center><img src="preview/dProduct.png" width="80%" alt="Home Page"></center></td>
   </tr>
   <tr>
     <td><center>Product Detail Page</center></td>
   </tr>
   <tr>
-    <td><center><img src="preview/dProduct.png" width="80%" alt="Product Detail"></center></td>
+    <td><center><img src="preview/home.png" width="80%" alt="Product Detail"></center></td>
   </tr>
 </table>
 </details>
