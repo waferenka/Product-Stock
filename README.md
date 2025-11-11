@@ -2,9 +2,10 @@
 
 <img src="imgs/landing.jpg" width="250" alt="Logo Alzi Petshop">
 
-# Alzi Petshop - Sistem Manajemen Stok
+# Alzi Petshop - Stock Management System
 
-Aplikasi web untuk manajemen stok produk toko hewan peliharaan yang simpel dan efisien. Dibangun dengan PHP native, aplikasi ini memisahkan peran antara penjual dan pembeli, menyediakan antarmuka yang fungsional untuk mengelola inventaris dan menampilkannya kepada pelanggan.
+A simple and efficient web application for managing pet shop product inventory.  
+Built using native PHP, this app separates roles between sellers and buyers, providing a functional interface to manage and display products to customers.
 
 <p align="center">
   <img src="https://img.shields.io/badge/platform-Web-blue.svg" alt="Platform">
@@ -15,26 +16,26 @@ Aplikasi web untuk manajemen stok produk toko hewan peliharaan yang simpel dan e
 
 ---
 
-## ✨ Fitur Utama
+## ✨ Main Features
 
-- [x] **Manajemen Produk (CRUD Penuh):**
-  - `[✓]` **Create:** Penjual dapat menambahkan produk baru beserta detail, harga, stok, dan gambar.
-  - `[✓]` **Read:** Menampilkan katalog produk yang terorganisir berdasarkan kategori untuk pembeli.
-  - `[✓]` **Update:** Mengubah data produk yang sudah ada, termasuk informasi dan foto.
-  - `[✓]` **Delete:** Menghapus produk dari daftar.
-- [x] **Sistem Login Berbasis Peran:**
-  - `[✓]` **Penjual:** Memiliki akses ke dasbor khusus untuk mengelola produk dan stok.
-  - `[✓]` **Pembeli:** Dapat menjelajahi produk tanpa perlu login.
-- [x] **Manajemen Stok:** Setiap produk memiliki atribut stok yang akan ditampilkan kepada pembeli, dengan penanda "Stok Habis" jika stok mencapai nol.
-- [x] **Optimalisasi Gambar Otomatis:** Gambar yang diunggah oleh penjual secara otomatis dikonversi ke format `.webp` untuk performa web yang lebih cepat.
-- [x] **Tampilan Responsif:** Antarmuka yang dapat beradaptasi dengan baik di perangkat desktop maupun mobile.
-- [x] **Integrasi Pihak Ketiga:**
-  - `[✓]` **Google Maps:** Menampilkan lokasi fisik toko untuk memudahkan pelanggan.
-  - `[✓]` **WhatsApp:** Tombol "Hubungi" pada halaman detail produk yang langsung mengarah ke chat WhatsApp.
+- [x] **Product Management (Full CRUD):**
+  - `[✓]` **Create:** Sellers can add new products along with details, prices, stock, and images.
+  - `[✓]` **Read:** Displays an organized product catalog categorized for buyers.
+  - `[✓]` **Update:** Edit existing product information, including images.
+  - `[✓]` **Delete:** Remove products from the list.
+- [x] **Role-Based Login System:**
+  - `[✓]` **Seller:** Access to a dedicated dashboard for managing products and stock.
+  - `[✓]` **Buyer:** Can browse products without needing to log in.
+- [x] **Stock Management:** Each product includes a stock attribute visible to buyers, with a “Out of Stock” label when inventory reaches zero.
+- [x] **Automatic Image Optimization:** Uploaded images are automatically converted to `.webp` format for faster web performance.
+- [x] **Responsive Layout:** Interface adapts seamlessly across desktop and mobile devices.
+- [x] **Third-Party Integrations:**
+  - `[✓]` **Google Maps:** Displays the shop’s physical location to help customers find it easily.
+  - `[✓]` **WhatsApp:** A “Contact” button on the product detail page directly opens a WhatsApp chat.
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 
 <div align="center">
     <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
@@ -47,74 +48,75 @@ Aplikasi web untuk manajemen stok produk toko hewan peliharaan yang simpel dan e
 
 ---
 
-## 🚀 Panduan Instalasi & Setup
+## 🚀 Installation & Setup Guide
 
-Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan lokal Anda.
+Follow these steps to run the project in your local environment.
 
-### **1. Prasyarat**
+### **1. Prerequisites**
 
-Pastikan Anda sudah menginstal perangkat lunak berikut:
+Make sure you have the following software installed:
 
-- **Server Web Lokal:** [XAMPP](https://www.apachefriends.org/index.html) atau WAMP.
-- **Browser Web:** Chrome, Firefox, atau Edge.
+- **Local Web Server:** [XAMPP](https://www.apachefriends.org/index.html) or WAMP.
+- **Web Browser:** Chrome, Firefox, or Edge.
 
-### **2. Langkah-langkah Setup**
+### **2. Setup Steps**
 
-1.  **Clone Repositori**
-    Buka terminal dan jalankan perintah berikut:
+1.  **Clone the Repository**  
+    Open the terminal and run the following command:
 
     ```bash
     git clone https://github.com/your_username/your_repository.git
     ```
 
-2.  **Pindahkan Proyek**
-    Pindahkan folder proyek yang sudah di-clone ke dalam direktori `htdocs` (untuk XAMPP) atau `www` (untuk WAMP).
+2.  **Move the Project Folder**  
+    Move the cloned project folder into the `htdocs` directory (for XAMPP) or `www` (for WAMP).
 
-3.  **Setup Database**
+3.  **Database Setup**
 
-    - Buka phpMyAdmin (`http://localhost/phpmyadmin`).
-    - Buat database baru dengan nama `alzipetshop`.
-    - Pilih database tersebut, lalu buka tab **"Import"**.
-    - Unggah file `alzipetshop.sql` yang ada di direktori utama proyek.
+    - Open phpMyAdmin (`http://localhost/phpmyadmin`).
+    - Create a new database named `alzipetshop`.
+    - Select the database, then go to the **"Import"** tab.
+    - Upload the `alzipetshop.sql` file located in the project’s root directory.
 
-4.  **Jalankan Aplikasi**
-    - Buka browser dan akses `http://localhost/nama-folder-proyek`.
-    - Aplikasi siap digunakan!
+4.  **Run the Application**
+    - Open your browser and go to `http://localhost/project-folder-name`.
+    - The application is now ready to use!
 
 ---
 
-## 📸 Tampilan Aplikasi
+## 📸 Application Preview
 
 <details>
-<summary>Klik untuk melihat screenshot</summary>
+<summary>Click to view screenshots</summary>
 <br>
 <table>
   <tr>
-    <td><center>Halaman Utama (Katalog Produk)</center></td>
+    <td><center>Home Page (Product Catalog)</center></td>
   </tr>
   <tr>
-    <td><center><img src="imgs/landing.jpg" width="80%" alt="Halaman Utama"></center></td>
+    <td><center><img src="imgs/landing.jpg" width="80%" alt="Home Page"></center></td>
   </tr>
   <tr>
-    <td><center>Halaman Detail Produk</center></td>
+    <td><center>Product Detail Page</center></td>
   </tr>
   <tr>
-    <td><center><img src="imgs/slide1.jpg" width="80%" alt="Detail Produk"></center></td>
+    <td><center><img src="imgs/slide1.jpg" width="80%" alt="Product Detail"></center></td>
   </tr>
     <tr>
-    <td><center>Dasbor Penjual (Manajemen Produk)</center></td>
+    <td><center>Seller Dashboard (Product Management)</center></td>
   </tr>
   <tr>
-    <td><center><img src="imgs/slide2.jpg" width="80%" alt="Dasbor Penjual"></center></td>
+    <td><center><img src="imgs/slide2.jpg" width="80%" alt="Seller Dashboard"></center></td>
   </tr>
 </table>
 </details>
 
 ---
 
-## 📁 Struktur Proyek
+## 📁 Project Structure
 
-Struktur folder dirancang untuk memisahkan aset, logika backend, dan halaman antarmuka.
+The folder structure is designed to separate assets, backend logic, and interface pages.
+
 
 ```
 .
