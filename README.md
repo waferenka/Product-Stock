@@ -72,13 +72,18 @@ Make sure you have the following software installed:
     Move the cloned project folder into the `htdocs` directory (for XAMPP) or `www` (for WAMP).
 
 3.  **Database Setup**
-
     - Open phpMyAdmin (`http://localhost/phpmyadmin`).
     - Create a new database named `alzipetshop`.
     - Select the database, then go to the **"Import"** tab.
     - Upload the `alzipetshop.sql` file located in the project’s root directory.
 
-4.  **Run the Application**
+4.  **php.ini Setup**
+    - Open XAMPP.
+    - Open `php.ini` by clicking the Apache config.
+    - Search line `;extension=gd`, remove the semicolon ; in front of it, like this: `extension=gd`.
+    - Save the file and restart Apache from XAMPP.
+
+5.  **Run the Application**
     - Open your browser and go to `http://localhost/project-folder-name`.
     - The application is now ready to use!
 
