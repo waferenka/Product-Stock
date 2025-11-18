@@ -369,11 +369,11 @@
                 <form action="landing_page.php" method="POST">
                     <div class="row" style="margin: 0 auto;">
                         <div class="col-12 mb-3" style="margin: 0 auto;">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Nama Anda"
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
                                 required>
                         </div>
                         <div class="col-12 mb-3" style="margin: 0 auto;">
-                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Pesan Anda"
+                            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Messages"
                                 required></textarea>
                         </div>
                         <div class="col-12" style="margin: 0 auto;">
